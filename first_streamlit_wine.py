@@ -65,7 +65,7 @@ with row1[1]:
 
 
 # coluna 3
-filtro_ano_top5 = top5[(top5['Ano'] >= 1999) & (top5['Ano'] <= 2022)]
+'''filtro_ano_top5 = top5[(top5['Ano'] >= 1999) & (top5['Ano'] <= 2022)]
 
 fig_top5 = px.scatter(filtro_ano_top5, x='Ano', y='Valor(US$)',
                  size='Valor(US$)', color='País',
@@ -93,5 +93,5 @@ fig_top5.update_traces(marker=dict(opacity=1))  # Definindo opacidade para 1 (se
 with row2[0]:
     st.write(fig_top5)
    
-st.markdown("Fonte: EMBRAPA")
+st.markdown("Fonte: EMBRAPA")'''
 
