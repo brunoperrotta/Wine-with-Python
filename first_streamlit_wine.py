@@ -5,7 +5,7 @@ import plotly.express as px
 st.set_page_config(layout='wide')
 
 # importando a tabela
-valor_import = pd.read_excel('/Users/brunoperrotta/primeiro projeto streamlit/import.xlsx', sheet_name='valor')
+valor_import = pd.read_excel('https://github.com/perrotta3/first-streamlit/blob/49da611a630d53413dcdbd42cc9b32a81e9a5026/import.xlsx', sheet_name='valor')
 
 # tirando a coluna id, pois não tem utilidade nessa análise
 valor_import = valor_import.drop(columns='Id')
