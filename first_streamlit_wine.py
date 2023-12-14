@@ -84,8 +84,8 @@ fig_top5 = px.scatter(filtro_ano_top5, x='Ano', y='Valor(US$)',
 #  chart layout
 fig_top5.update_layout(
     title='Evolution of the top 5 countries that export the most wine to Brazil over time',
-    xaxis_title='Ano',
-    yaxis_title='(US$)',
+    xaxis_title='Year',
+    yaxis_title='US$',
     legend_title='Países'
 )
 fig_top5.update_yaxes(dtick=15000000)
