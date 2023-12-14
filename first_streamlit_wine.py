@@ -47,7 +47,8 @@ row2 = st.columns(2)
 
 # column 1
 fig_group5_total = px.bar(group5, x="País", y='Valor(US$)',text=group5['Valor(US$)'].apply(lambda x: f'{x:,.0f}'), color_discrete_sequence=px.colors.sequential.RdBu,
-                          title='Accumulated value of the top 5 wine exporters to Brazil between 1970-2022')
+                          title='Accumulated value of the top 5 wine exporters to Brazil between 1970-2022',
+                         labels={'País': 'Country', 'Valor(US$)': 'US$'})
 fig_group5_total.update_layout(width=600,  height=460)
 fig_group5_total.update_traces(textposition='outside', textfont=dict(color='black'))
 
@@ -56,7 +57,8 @@ with row1[0]:
 
 # column 2
 fig_vl_anual = px.line(valor_anual, x="Ano", y='Valor(US$)', color_discrete_sequence=px.colors.sequential.RdBu,
-                       title='Annual value of table wine imported by Brazil' )
+                       title='Annual value of table wine imported by Brazil',
+                      labels={'Ano': 'Year', 'Valor(US$)': 'US$'})
 fig_vl_anual.update_xaxes(dtick=2)
 fig_vl_anual.update_yaxes(dtick=50000000)
 fig_vl_anual.update_layout(width=600,  height=460)
