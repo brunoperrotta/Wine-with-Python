@@ -5,7 +5,7 @@ import plotly.express as px
 st.set_page_config(layout='wide')
 
 # table import
-valor_import = pd.read_excel('https://github.com/perrotta3/first-streamlit/raw/49da611a630d53413dcdbd42cc9b32a81e9a5026/import.xlsx', sheet_name='valor', engine='openpyxl')
+valor_import = pd.read_excel('https://github.com/brunoperrotta/first-streamlit/raw/49da611a630d53413dcdbd42cc9b32a81e9a5026/import.xlsx', sheet_name='valor', engine='openpyxl')
 
 # droping id column
 valor_import = valor_import.drop(columns='Id')
