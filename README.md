@@ -1,4 +1,4 @@
-![Imagem de Fundo](wine-photo.jpg)
+![Imagem de Fundo](pictures/wine-cover-picture.jpg)
 
 # [Wine with Python](https://first-app-project-hqvxgxgdnuu2bdsrnvw7bp.streamlit.app/)
 
